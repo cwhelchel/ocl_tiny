@@ -3,13 +3,16 @@
  * Example A.1 from OpenMP C/C++ API sepecification
  */
 
+#include <stdio.h>
+
 #define  N	1024
 
 int  a[N], b[N];
 
 
 void pd001s(
-#pragma omp declaration n,a,b
+// [cmw] omp declaration is not a valid OpenMP directive or clause
+//#pragma omp declaration n,a,b
 int n,
 int *a,
 int *b)
