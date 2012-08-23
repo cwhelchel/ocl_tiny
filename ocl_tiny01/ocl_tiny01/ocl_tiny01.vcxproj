@@ -61,6 +61,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <OpenMPSupport>true</OpenMPSupport>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -91,6 +92,7 @@
   <ItemGroup>
     <ClCompile Include="ocl_tiny01.cpp" />
     <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="tiny01.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
