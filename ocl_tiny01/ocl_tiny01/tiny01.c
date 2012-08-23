@@ -28,7 +28,7 @@ int *b)
 }
 
 
-int main(int argc, char **argv)
+int tiny01(int argc, char **argv)
 {
     int  i, n, errors;
 
