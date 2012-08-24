@@ -194,6 +194,10 @@
 					/>
 				</FileConfiguration>
 			</File>
+			<File
+				RelativePath=".\tiny02.c"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
