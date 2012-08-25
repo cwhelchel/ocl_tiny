@@ -30,14 +30,14 @@ work (int *a)
 
 void
 critical (
-#pragma omp declaration x
+//#pragma omp declaration x
 	int  *x,
-#pragma omp declaration y
+//#pragma omp declaration y
 	int  *y)
 {
-#pragma omp declaration x_next
+//#pragma omp declaration x_next
 	int	*x_next;
-#pragma omp declaration y_next
+//#pragma omp declaration y_next
 	int *y_next;
 
 
