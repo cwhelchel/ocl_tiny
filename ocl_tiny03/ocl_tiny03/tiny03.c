@@ -45,7 +45,7 @@ int npoints)
     }
 }
 
-int main(int argc, char **argv)
+int tiny03(int argc, char **argv)
 {
 
     const int  n = NUM;
