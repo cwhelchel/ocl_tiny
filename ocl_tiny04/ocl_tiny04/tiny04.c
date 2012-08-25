@@ -24,20 +24,20 @@ int sqrt_func(int k)
 }
 
 void d001s(
-#pragma omp declaration m
+//#pragma omp declaration m
 	int m,
-#pragma omp declaration n
+//#pragma omp declaration n
 	int n,
-#pragma omp declaration a
+//#pragma omp declaration a
 	int *a,
-#pragma omp declaration b
+//#pragma omp declaration b
 	int *b,
-#pragma omp declaration y
+//#pragma omp declaration y
 	int *y,
-#pragma omp declaration z
+//#pragma omp declaration z
 	int *z)
 {
-#pragma omp declaration i
+//#pragma omp declaration i
 int i;
 #pragma omp parallel private(i) shared(m,n,a,b,y,z)
     {
