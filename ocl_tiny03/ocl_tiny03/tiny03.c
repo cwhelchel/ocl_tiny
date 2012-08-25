@@ -3,7 +3,9 @@
  * Example A.3 from OpenMP C/C++ API sepecification
  */
 
+#include "stdafx.h"
 #include <stdio.h>
+#include <omp.h>
 
 #define NUM 1024
 
@@ -22,16 +24,16 @@ void subdomain(int *x, int iam, int ipoints)
 }
 
 void par001s(
-#pragma omp declaration x
+//#pragma omp declaration x
 int *x,
-#pragma omp declaration npoints
+//#pragma omp declaration npoints
 int npoints)
 {
-#pragma omp declaration iam
+//#pragma omp declaration iam
     int  iam;
-#pragma omp declaration np
+//#pragma omp declaration np
 	int np;
-#pragma omp declaration ipoints
+//#pragma omp declaration ipoints
 	int ipoints;
 
 #pragma omp parallel shared(x, npoints) private(iam, np, ipoints)
