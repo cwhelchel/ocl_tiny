@@ -13,19 +13,19 @@ void work(ip, jp)
 }
 
 void pd002s(
-#pragma omp declaration n
+//#pragma omp declaration n
     int  n,
     int*a, int *b)
 {
-#pragma omp declaration i
+//#pragma omp declaration i
     int  i;
-#pragma omp declaration alocal
+//#pragma omp declaration alocal
     int  alocal;
-#pragma omp declaration blocal
+//#pragma omp declaration blocal
     int  blocal;
-#pragma omp declaration x
+//#pragma omp declaration x
     int  x;
-#pragma omp declaration y
+//#pragma omp declaration y
     int  y;
 
     x = 0;
