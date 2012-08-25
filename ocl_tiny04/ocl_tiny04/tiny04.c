@@ -52,7 +52,7 @@ int i;
 	}
 }
 
-int main(int argc, char **argv)
+int tiny04(int argc, char **argv)
 {
     int  m, n, i, errors;
 
