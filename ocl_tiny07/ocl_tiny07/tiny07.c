@@ -40,7 +40,7 @@ void pd002s(
     *b += y;
 }
 
-int main(int argc, char *argv[])
+int tiny07(int argc, char *argv[])
 {
     int  i, n, errors;
     int  a, b;
