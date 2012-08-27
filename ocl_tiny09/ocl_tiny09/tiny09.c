@@ -26,9 +26,9 @@ void work(x)
 }
 
 void sngl001s(
-#pragma omp declaration x
+//#pragma omp declaration x
 	int *x,
-#pragma omp declaration y
+//#pragma omp declaration y
 	int *y)
 {
 #pragma omp parallel shared(x,y)
