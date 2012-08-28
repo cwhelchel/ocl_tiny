@@ -44,7 +44,7 @@ void sngl001s(
     }
 }
 
-int main(int argc, char *argv[])
+int tiny09(int argc, char *argv[])
 {
     int  i, errors;
 
