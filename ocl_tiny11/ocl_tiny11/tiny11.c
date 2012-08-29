@@ -26,16 +26,16 @@ do_by_x (x, iam, ipoints)
 
 void
 test (
-#pragma omp declaration x
+//#pragma omp declaration x
 	  int *x,
-#pragma omp declaration npoints
+//#pragma omp declaration npoints
 	  int npoints,
-#pragma omp declaration thds
+//#pragma omp declaration thds
 	  int thds)
 {
-#pragma omp declaration iam
+//#pragma omp declaration iam
 	int	iam;
-#pragma omp declaration ipoints
+//#pragma omp declaration ipoints
 	int ipoints;
 
 
