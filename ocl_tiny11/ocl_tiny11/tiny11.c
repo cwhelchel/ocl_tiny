@@ -3,6 +3,8 @@
  * Example A.11 from OpenMP C/C++ API sepecification
  */
 #include <stdio.h>
+#include <stdlib.h>
+#include <omp.h>
 #define N	1024
 
 
