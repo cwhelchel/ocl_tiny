@@ -22,11 +22,11 @@ work (int k)
 
 
 test (
-#pragma omp declaration lb
+//#pragma omp declaration lb
 	  int lb,
-#pragma omp declaration ub
+//#pragma omp declaration ub
 	  int ub,
-#pragma omp declaration st
+//#pragma omp declaration st
 	  int st)
 {
 
