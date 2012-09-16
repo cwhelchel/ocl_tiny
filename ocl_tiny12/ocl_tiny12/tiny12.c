@@ -15,19 +15,19 @@ void work(int *ip, int *jp)
 }
 
 void at001s(
-#pragma omp declaration n
+//#pragma omp declaration n
 			int n,
-#pragma omp declaration x
+//#pragma omp declaration x
 			int *x,
-#pragma omp declaration y
+//#pragma omp declaration y
 			int *y,
-#pragma omp declaration index
+//#pragma omp declaration index
 			int *index)
 {
     int  i;
-#pragma omp declaration xlocal
+//#pragma omp declaration xlocal
 	int xlocal;
-#pragma omp declaration ylocal
+//#pragma omp declaration ylocal
 	int ylocal;
 
 #pragma omp parallel for private(xlocal,ylocal) shared(x, y, index, n)
