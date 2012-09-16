@@ -49,7 +49,7 @@ void tests (
   }
 }
 
-int main (int argc, char *argv[])
+int tiny13 (int argc, char *argv[])
 {
   int	i, thds, v;
 
