@@ -3,6 +3,7 @@
  * Example A.13 from OpenMP C/C++ API sepecification
  */
 #include <stdio.h>
+#include <omp.h>
 #define N	1024
 
 
@@ -10,13 +11,13 @@ int	x[N], sync[N], work[N];
 
 
 void tests (
-#pragma omp declaration x
+//#pragma omp declaration x
 		int *x)
 {
 	int	i;
-#pragma omp declaration iam
+//#pragma omp declaration iam
 	int iam;
-#pragma omp declaration neighbor
+//#pragma omp declaration neighbor
 	int neighbor;
 
 
