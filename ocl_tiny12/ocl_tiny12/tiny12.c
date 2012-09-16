@@ -39,7 +39,7 @@ void at001s(
     }
 }
 
-int main(int argc, char *argv[])
+int tiny12(int argc, char *argv[])
 {
     int  i, errors, errors1, n;
 
