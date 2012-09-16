@@ -90,7 +90,7 @@ checkx (int x[], int npoints, int thds)
 
 
 
-int main (int argc, char *argv[])
+int tiny11(int argc, char *argv[])
 {
   int	i, j, thds;
 
