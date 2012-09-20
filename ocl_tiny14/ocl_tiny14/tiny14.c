@@ -3,6 +3,8 @@
  * Example A.14 from OpenMP C/C++ API sepecification
  */
 #include <stdio.h>
+#include <omp.h>
+
 int	x;
 int	*p;
 
@@ -34,14 +36,14 @@ f2(q)
 
 int
 g(
-#pragma omp declaration n
+//#pragma omp declaration n
   int n)
 {
-#pragma omp declaration j
+//#pragma omp declaration j
   int	j;
-#pragma omp declaration i
+//#pragma omp declaration i
 	int	i;
-#pragma omp declaration sum
+//#pragma omp declaration sum
 	int sum;
 
 
