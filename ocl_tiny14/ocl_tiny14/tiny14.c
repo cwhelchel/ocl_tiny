@@ -69,7 +69,7 @@ g(
 }
 
 
-int main (int argc, char *argv[])
+int tiny14 (int argc, char *argv[])
 {
   int	ret, thds;
 
