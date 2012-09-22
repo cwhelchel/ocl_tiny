@@ -28,7 +28,7 @@ void
 test1 ()
 {
 	int	i;
-#pragma omp declaration np
+//#pragma omp declaration np
 	int np=5;
 
 
@@ -43,7 +43,7 @@ test1 ()
 void
 test2 ()
 {
-#pragma omp declaration i
+//#pragma omp declaration i
   int	i;
 
 
