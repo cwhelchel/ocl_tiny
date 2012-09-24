@@ -3,6 +3,8 @@
  * Example A.15 from OpenMP C/C++ API sepecification
  */
 #include <stdio.h>
+#include <omp.h>
+
 #define	N	1024
 
 int	x[N], y[N];
@@ -56,7 +58,7 @@ test2 ()
 
 
 
-int main (int argc, char *argv[])
+int tiny15 (int argc, char *argv[])
 {
   int	i, thds;
 

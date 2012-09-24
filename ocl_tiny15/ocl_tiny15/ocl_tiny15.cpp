@@ -20,7 +20,7 @@ void test1 ()
     cl_mem y_buff = NULL;
 
     o2o_init();
-    o2o_print_device_info();
+    //o2o_print_device_info();
     o2o_create_cmd_queue();
 
     x_buff = o2o_create_buffer(CL_MEM_READ_WRITE, sizeof(int)*N, x);
@@ -42,26 +42,24 @@ void test1 ()
     o2o_finalize(y_buff);
 }
 
-
-void test2 ()
-{
-    //#pragma omp declaration i
-    int	i;
-
-
-#pragma omp parallel private(i) num_threads( (omp_get_max_threads ()) )
-    {
-        i = omp_get_thread_num ();
-        work2 (i);
-    }
-}
+//
+//void test2 ()
+//{
+//    //#pragma omp declaration i
+//    int	i;
+//
+//
+//#pragma omp parallel private(i) num_threads( (omp_get_max_threads ()) )
+//    {
+//        i = omp_get_thread_num ();
+//        work2 (i);
+//    }
+//}
 
 int _tmain(int argc, _TCHAR* argv[])
 {
     int	i, thds;
-
     int	errors = 0;
-
 
     for (i=0;  i<N;  i++) {
         x[i] = -1;
@@ -69,9 +67,10 @@ int _tmain(int argc, _TCHAR* argv[])
     }
 
     test1 ();
-    test2 ();
+ //   test2 ();
 
-    thds = omp_get_max_threads ();
+    thds = NUM_THREADS;
+
     for (i=0; i<thds; i++) {
         if (x[i] != i) {errors++;
         printf ("omp_get_thread_num 015 - expected x[%d] = %d, observed %d\n",
