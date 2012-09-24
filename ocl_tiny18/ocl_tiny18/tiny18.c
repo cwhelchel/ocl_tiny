@@ -14,9 +14,9 @@ void work(i, j)
 }
 
 void some_work(
-#pragma omp declaration i
+//#pragma omp declaration i
 		int i, 
-#pragma omp declaration n
+//#pragma omp declaration n
 		int n)
 {
     int  j;
@@ -30,10 +30,10 @@ void some_work(
 }
 
 void d003s(
-#pragma omp declaration n
+//#pragma omp declaration n
 		   int n)
 {
-#pragma omp declaration i
+//#pragma omp declaration i
     int  i;
 	int j;
 #pragma omp parallel shared(n)
@@ -86,7 +86,7 @@ int icheck(ch)
     return res;
 }
 
-int main(int argc, char *argv[])
+int tiny18(int argc, char *argv[])
 {
     int  i, n, errors;
 
