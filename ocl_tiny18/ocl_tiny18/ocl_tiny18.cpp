@@ -33,7 +33,7 @@ void d003s(int n)
 
     o2o_set_kernel_arg(0, sizeof(cl_mem), &iw_buff); 
 
-    o2o_execute_kernel(np); 
+    o2o_execute_kernel(np, 2); 
 
 
     o2o_read_buffer(iw_buff, sizeof(int)*N*N, iw);
